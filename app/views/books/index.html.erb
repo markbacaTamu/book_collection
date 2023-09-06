@@ -1,13 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Booksss</h1>
-<h2>heyyy</h2>
+<h1>My Books</h1>
 
 <div id="books">
   <% @books.each do |book| %>
     <%= render book %>
     <p>
-      <%= link_to "Show this book", book %>
+      <%= link_to "Show this book", book %> 
+      <%= link_to('Edit', edit_book_path(book)) %>
+      <%= link_to('Delete', delete_book_path(book)) %>
     </p>
   <% end %>
 </div>

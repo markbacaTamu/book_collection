@@ -10,3 +10,4 @@ RSpec.describe 'Creating a book', type: :feature do
     expect(page).to have_content('harry potter')
   end
 end
+
